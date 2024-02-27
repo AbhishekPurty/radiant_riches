@@ -20,12 +20,12 @@ interface Props{
 const Deal = ({id, logo, img_name, title, description, highlights, r_value, rating, star}: Props) => {
   return (
     <div className="md:flex bg-white my-5 rounded-lg pb-2 pr-2">
-      <div className="relative">
+      <div className="">
         { id==1 ?
-          <div className="-mt-3 -ml-2 -mr-2 text-white flex items-center gap-2 max-w-fit text-lg rounded-r-md px-2 py-1 bg-orange-500 z-10"><GrTrophy />Best Choice</div>
+          <div className="-mt-3 -ml-2 -mr-2 text-white flex items-center gap-2 max-w-fit text-lg rounded-r-md px-2 py-1 bg-orange-500"><GrTrophy />Best Choice</div>
           :
           id==2 ?
-          <div className="-mt-3 -ml-2 -mr-2 text-white flex items-center gap-2 max-w-fit text-lg rounded-r-md px-2 py-1 bg-orange-500 z-10"><IoDiamondOutline />Best Value</div>
+          <div className="-mt-3 -ml-2 -mr-2 text-white flex items-center gap-2 max-w-fit text-lg rounded-r-md px-2 py-1 bg-orange-500"><IoDiamondOutline />Best Value</div>
           :
           <div></div>
         }
